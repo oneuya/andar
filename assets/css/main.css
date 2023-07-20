@@ -1,0 +1,542 @@
+.sc-visual{}
+.sc-visual .swiper{
+    height: calc(100vh - 140px);
+    background: #f00;
+    min-height: 350px;
+}
+.sc-visual .swiper-slide{}
+
+
+.sc-visual .swiper-slide a{}
+.sc-visual .swiper-slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sc-visual .swiper-slide .text-wrap{
+    position: absolute;
+    bottom: 0;left: 0;
+    padding: 96px 36px;
+    color: #fff;
+}
+.sc-visual .swiper-slide strong{font-size: 28px;
+font-weight: 700;}
+.sc-visual .swiper-slide p{font-size: 17px;}
+.sc-visual .pagination{
+    position: absolute;
+    bottom: 37px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.sc-visual .pagination .swiper-pagination-bullet{
+    margin: 0;
+    width: 20px;
+    height: 2px;
+    background: #fff;
+    border-radius: 0;
+}
+
+
+/* 공통 */
+.prd-list{}
+.prd-list .prd-item{}
+.prd-list .img-box{
+    position: relative;
+}
+.prd-list .img-box > img{
+    width: 100%;
+}
+.prd-list .img-box .rank{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 24px;
+    line-height: 24px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+
+}
+.prd-list .img-box .badge{
+    position: absolute;
+    top: 0;right: 0;
+    width: 20%;
+}
+.prd-list .img-box .badge img{}
+.prd-list .text-box{
+    padding: 15px 10px 0;
+}
+.prd-list .text-box .review{
+    color: #8e1f29;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1;
+}
+.prd-list .text-box .title{
+    width: 100%;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+}
+.prd-list .text-box .desc{
+    display: flex;
+    gap: 5px;
+    
+}
+.prd-list .text-box .per{
+    color: #8e1f29;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+}
+.prd-list .text-box .curr{
+    color: #333;
+    padding: 0;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    vertical-align: top;
+}
+.prd-list .text-box .ori{
+    font-size: 13px;
+    line-height: 18px ;
+    font-weight: 400 ;
+    color: #8d8d8d ;
+    margin-left: 5px;
+    text-decoration: line-through;
+    vertical-align: top;
+}
+
+.prd-list .text-box .add-box{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.prd-list .text-box .add-box .add{
+    border: 1px solid rgba(142,31,41,0.5);
+    padding: 5px 6px 4px 6px;
+    font-size: 10px;
+    line-height: 1;
+    color: #8e1f28;
+}
+
+/* list1 */
+.prd-list.list1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px 10px;
+    margin-bottom: 50px;
+}
+
+/* list2 */
+.prd-list.list2{
+    padding: 0 16px;
+}
+.prd-list.list2 .prd-item{
+    padding: 20px 0;
+}
+.prd-list.list2 .prd-item+.prd-item{
+    border-top: 1px solid #eee;
+}
+.prd-list.list2 .prd-item a{
+    display: flex;
+}
+
+.prd-list.list2 .img-box{
+    width: 110px;
+}
+.prd-list.list2 .text-box{
+    flex: 1;
+    padding: 0 28px;
+}
+
+
+
+
+
+.sc-best{
+}
+.sc-best h2{
+    padding: 50px 16px 22px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sc-best .tab-nav{
+    padding: 0 18px;
+}
+.sc-best .tab-list{
+    margin-bottom: 22px;
+    display: flex;
+    gap: 10px;
+}
+.sc-best .tab-item {
+    display: block;
+    width: auto;
+    padding: 9px 10px;
+    font-size: 15px;
+    color: #77797E;
+    line-height: normal;
+    font-weight: 700;
+}
+
+.sc-best .tab-item.active{
+    font-weight: 700;
+    color: #FFFFFF;
+    background: #B75622;
+    border-radius: 60px;
+    display: block;
+    padding: 10px;
+}
+
+.sc-best .prd-list{
+    display: none;
+    
+}
+
+.sc-best .prd-list.active{
+    display: block;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px 10px;
+    margin-bottom: 50px;
+}
+
+.sc-best .link-more{
+    display: flex;
+    border: 1px solid #000;
+    margin: 0 16px 60px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.sc-best .link-more .color{
+    color: #C86733;
+}
+
+.sc-best .link-more::after{
+    content: '';
+    display: inline-block;
+    width: 16px; height: 16px;
+    vertical-align: top;
+    background-image: url(../img/arrow_right.png);
+}
+
+
+
+
+
+
+.sc-coupon{margin-bottom: 20px;}
+.sc-coupon a{
+    display: block;
+}
+.sc-coupon img{
+    width: 100%;
+}
+
+
+
+
+
+.sc-lookbook{}
+.sc-lookbook .intro-area{
+    
+}
+.sc-lookbook .intro-area .text-box{
+    padding: 20px 16px 20px;
+}
+.sc-lookbook .intro-area .text-box strong{
+    font-size: 26px;
+    line-height: 35px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+}
+.sc-lookbook .intro-area .text-box p{
+    padding: 14px 0 28px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    color: #333;
+    font-weight: 400;
+}
+.sc-lookbook .intro-area .text-box .show{
+    display: inline-block;
+    background-color: #1e1e1e;
+    border-radius: 2px;
+    border: 1px solid #1e1e1e;
+    color: #fff;
+    padding: 8px 47px 8px 18px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    background-image: url(../img/show-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: calc(100% - 18px) center;
+}
+
+.sc-lookbook .lookbook-area .lb-area{}
+.sc-lookbook .lookbook-area .lb-area .img-box{
+}
+.sc-lookbook .lookbook-area .lb-area .text-box{
+    padding: 20px 16px;
+}
+
+.sc-lookbook .lookbook-area .lb-area .text-box strong{
+    font-size: 26px;
+    line-height: 35px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+}
+.sc-lookbook .lookbook-area .lb-area .text-box p{
+    padding: 14px 0 28px;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: -0.05em;
+    color: #333;
+    font-weight: 400;
+}
+.sc-lookbook .lookbook-area .lb-area .text-box .show{
+    display: inline-block;
+    background-color: #1e1e1e;
+    border-radius: 2px;
+    border: 1px solid #1e1e1e;
+    box-sizing: border-box;
+    color: #fff;
+    padding: 8px 47px 8px 18px;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    background-image: url(https://m.andar.co.kr/common/mo/Icon_move.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: calc(100% - 18px) center;
+}
+
+
+
+
+
+
+
+.sc-new{
+    position: relative;
+}
+.sc-new .link-more{
+    display: flex;
+    border: 1px solid #e0e0e0;
+    margin: 0 16px 60px;
+    height: 53px;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+}
+
+.sc-new .link-more::after{
+    content: '';
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    background-image: url(../img/arrow_right.png);
+    background-size: 19px auto;
+    margin-bottom: 5px;
+}
+
+.sc-new .headline{
+    padding: 50px 16px 22px;
+    font-size: 20px;
+    line-height: 29px;
+    color: #333;
+    letter-spacing: -0.05em;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sc-new .all-view{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 65px;
+    padding: 0 38px;
+
+}
+
+.sc-new .all-view span{
+    display: block;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+}
+
+.sc-new .all-view span::after{
+    content: '';
+    background-image: url(https://m.andar.co.kr/iv/arrow_right.png) no-repeat 0px 0px;
+    
+    padding-left: 5px;
+    line-height: 18px;
+}
+
+
+
+.sc-brand{
+    padding: 20px 0;
+}
+.sc-brand a{
+    display: block;
+    padding: 56px 20px;
+    background-color: #C86733;
+
+}
+.sc-brand h2{
+    color: #fff;
+    display: inline-block;
+    font-size: 18px;
+    letter-spacing: -0.5px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #fff;
+    padding-bottom: 5px;
+    line-height: 1.2;
+}
+
+.sc-brand strong{
+    display: block;
+    font-size: 30px;
+    line-height: 36px;
+    letter-spacing: -0.03em;
+    color: #fff;
+    font-weight: 700;
+}
+.sc-brand p{
+    padding: 10px 0 5px;
+    font-size: 12px;
+    line-height: 1.4;
+    color: #fff;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+}
+.sc-brand .link-more{
+    display: inline-block;
+    width: 100px;
+    margin-top: 20px;
+    padding: 10px 0;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: -0.03em;
+    font-weight: 500;
+    color: #fff;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+    
+}
+
+
+.sc-relative{
+    padding: 0 0 0 20px;
+}
+
+.sc-relative .content{}
+.sc-relative .title-area{
+    padding: 30px 0;
+    font-size: 20px;
+    line-height: 24px;
+    color: #333;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+.sc-relative .title-area h3{}
+.sc-relative .title-area .link-more{
+    margin-right: 40px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sc-relative .title-area a::after{
+    content: '';
+    background-image: url(../img/show-arrow.png);
+    background-repeat: no-repeat;
+    background-size: 15px auto;
+    background-position: center;
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+  
+
+}
+
+
+.info-inner{
+    margin-top: 70px;
+}
+.sc-info.membership{
+    padding: 65px 20px;
+    background-image: url(https://m.andar.co.kr/web/andar/banner/member/230410/banner-mo.jpg);
+     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sc-info.store{
+    padding: 80px 20px 74px;
+    background-image: url(https://m.andar.co.kr/web/andar/banner/store/20210628/banner-mo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+}
+
+
+
+
+.sc-info h2{
+    font-size: 26px;
+    line-height: 31px;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #fff;
+}
+.sc-info p{
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 400;
+    letter-spacing: -0.02em;
+    color: #fff;
+    padding: 15px 0 30px;
+    box-sizing: border-box;
+}
+.sc-info span{
+    border: 1px solid #fff;
+    padding: 7px 25px 8px;
+    color: #fff;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.03em;
+    display: inline-block;
+    box-sizing: border-box;
+}
