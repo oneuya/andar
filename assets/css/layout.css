@@ -519,6 +519,7 @@ header .side-nav .box{
 .footer .nav-list{
     display: flex;
     gap: 20px;
+
 }
 .footer .nav-item{
     font-size: 12px;
